@@ -1,0 +1,130 @@
+body {
+    background-image: url('https://i.imgur.com/2b3fbfb.png');
+    background-size: cover;
+}
+h1 {
+    color: #1a1a1a;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 450px
+}
+    p {
+      color: #1a1a1a;
+      font-family:'Antic';
+    }
+    div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .bg{
+      background-color: #ffffff;
+      left: 80px;
+      right: 30px;
+      /*justify-content: center;*/
+      align-content: center;
+      text-align: center;
+      top: 0px;
+      bottom: 0px;
+      vertical-align:bottom;
+      position: fixed;
+    }
+    .frame {
+      height: 300px;
+      line-height: 25px;
+      width: 450px;
+      text-align: center;
+      margin: 1em 0;
+      vertical-align: middle;
+    }
+    .text{
+      text-align: center;
+    }
+   .img1 {
+    vertical-align: middle;
+    margin-right: 390px;
+  }
+
+   label{
+    font-family: 'DM Sans';
+    color: #8f8e8e;
+    align-self:flex-start;
+   }
+    input[type=text], input[type=password] {
+     width: 14%;
+     background-color: #d5d4d4;
+     padding: 10px 15px;
+     border: none;
+     border-radius: 18px;
+     color: #3b3b3b;
+   }
+   input:focus {
+    background-color: #d5d4d4;
+    font-size: small;
+    color: #3b3b3b;
+   }
+  input[type=submit] {
+    background-color: #21505d;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family:'Antic';
+    border-radius: 18px;
+    font-size: small;
+  
+  }
+  a{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-family:'Antic';
+    border-radius: 18px; 
+    font-size: small;
+  }
+  a.cs{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-family:'Antic';
+    border-radius: 18px; 
+    font-size: small;
+    
+  }
+  a.options{
+    background-color: #21505d;
+    color: #ffffff;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-family:'DM Sans';
+    border-radius: 18px; 
+    font-size: small;
+  }
+  footer{
+    background-color: #2f3030;
+    text-align: center;
+    color: #ffffff;
+    width:100%;
+    min-height: 10%;
+    height: auto;
+    font-size: small;
+    /*border-top: solid 0.02rem #141212;*/
+    display:flex;
+    justify-content: space-around;
+  }
+  /* SCROLLBAR */
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000;
+    border-left: #004751 0.3rem solid;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d3cdcd;
+    border-radius: 5rem;
+  }
+  /* SCROLLBAR */
