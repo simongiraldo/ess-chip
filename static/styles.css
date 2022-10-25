@@ -1,0 +1,174 @@
+body {
+    background-image: url('https://i.imgur.com/2b3fbfb.png');
+    background-size: cover;
+}
+
+h1 {
+    color: #1a1a1a;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 170px
+}
+
+.title{
+    color: #1a1a1a;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 430px
+}
+    
+p {
+    color: #1a1a1a;
+    font-family:'Antic';
+}
+
+.grid-container {
+    top:0;
+    bottom: 0;
+    position: fixed;
+    background-color: #ffffff;
+    display:inline-grid;
+    grid-template-columns: 400px 500px;
+    grid-template-rows: max-content;
+    justify-content:space-evenly;
+    align-content:space-between;
+    padding: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    left: 80px;
+    right: 30px;
+    height: 100%;
+}
+
+.bg{
+    background-color: #ffffff;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 80px;
+    margin-right: 30px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    top: 0px;
+    bottom: 0px;
+}
+
+.frame {
+    height: 300px;
+    line-height: 25px;
+    width: 450px;
+    text-align: center;
+    margin: 1em 0;
+    vertical-align: middle;
+}
+
+.text{
+    text-align: center;
+}
+
+.img1 {
+    vertical-align: middle;
+    margin-right: 100px;
+
+}
+
+.img2{
+    margin-left: 0px;
+}
+
+.imgt1 {
+    vertical-align: middle;
+    margin-right: 370px;
+}
+
+.imgt2{
+    margin-left:430px;
+}
+
+label{
+    font-family: 'DM Sans';
+    color: #8f8e8e;
+    align-self:flex-start;
+}
+
+.input2{
+    width: 100px;
+    background-color: #d5d4d4;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 18px;
+    color: #3b3b3b;
+}
+    
+input[type=text], input[type=password] {
+    width: 50%;
+    background-color: #d5d4d4;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 18px;
+    color: #3b3b3b;
+}
+
+input:focus {
+    background-color: #d5d4d4;
+    font-size: small;
+    color: #3b3b3b;
+}
+
+.submit-login {
+    background-color: #21505d;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family:'Antic';
+    border-radius: 18px;
+    font-size: small;
+}
+
+a{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-family:'Antic';
+    border-radius: 18px; 
+    font-size: small;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    font-family: 'Antic';
+    font-weight: 600;
+}
+
+footer{
+    background-color: #2f3030;
+    text-align: center;
+    color: #ffffff;
+    width:100%;
+    min-height: 10%;
+    height: auto;
+    font-size: small;
+  
+    /*border-top: solid 0.02rem #141212;*/
+    display:flex;
+    justify-content: space-around;
+}
+
+/* SCROLLBAR */
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000;
+    border-left: #004751 0.3rem solid;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d3cdcd;
+    border-radius: 5rem;
+  }
+/* SCROLLBAR */
+  

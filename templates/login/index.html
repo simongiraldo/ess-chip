@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="Login para ver tu informacion">
+        <title>ESS | Login</title>
+        <link rel="stylesheet" href="{% static '/styles.css' %}">
+    </head>
+<body>
+    <main>
+        <div class="grid-container">
+            <div class="frame">
+                <img src="https://i.imgur.com/jbm0Ov6.png" alt="Revisa tu saldo y recarga tu carnet con ESS" width="450" height="300">
+            </div>
+            <div class="text">
+                <img src="https://i.imgur.com/5OYhm8W.png" class=img1 align="right" width="85" height="80"> 
+                <h1>LOG IN</h1>
+                <img src="https://i.imgur.com/Sl8pWxB.png" class=img2 width="200" height="15">
+                <br>
+                <p>Ingrese con su usuario de EIA Digital</p>
+                <form method="POST" action="{% url "login" %}">
+                    {% csrf_token %}
+                    <label for="iuser">USUARIO</label>
+                    <br>
+                    <input id="iuser" type="text" name="username" placeholder="Nombre de usuario:" required>
+                    <br>
+                    <br>
+                    <label for="ipass" class="label">CONTRASEÑA</label>
+                    <br>
+                    <input id="ipass" type="password" name="password" placeholder="Contraseña:" required>
+                    <br> <br>
+                    <input type="submit" value="INGRESAR" class="submit-login">
+                    <br>
+                    <br>
+                </form>
+                {% if error %}
+                    <p class="error">{{ error }}</p>
+                {% endif %}
+                <a href="https://www.eia.edu.co">EIA</a>
+                <a href="https://www.eiadigital.eia.edu.co/">EIA Digital</a>
+                <a href="https://eiadigital.eia.edu.co/cas/login?service=https%3A%2F%2Feiadigital.eia.edu.co%2Fextranet%2Fenter.do%3Bjsessionid%3D2DFE90E76F1BB44F6DD10E98076993B2#">Recuperar contraseña</a>
+            </div>
+        </main>
+</body>
+
+</html>
