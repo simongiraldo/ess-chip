@@ -25,9 +25,10 @@ def login_view(request):
         password = request.POST['password']
 
         subject="Verifica tu cuenta"
-        message= "Por favor verifica tu cuenta leyendo este código: " + otp
+        message= "Por favor verifica tu cuenta ingresando este código: " + otp
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [username]
+        
 
         send_mail(subject, message, email_from, recipient_list)
 
