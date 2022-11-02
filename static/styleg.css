@@ -1,12 +1,14 @@
 body {
-    background-image: url('https://i.imgur.com/2b3fbfb.png');
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://i.imgur.com/2b3fbfb.png');
+  background-size: cover;
 }
 h1 {
     color: #1a1a1a;
     font-family:'Open Sans', sans-serif;
     font-weight: 800;
-    margin-left: 450px
+    margin-left: 460px;
 }
     p {
       color: #1a1a1a;
@@ -16,17 +18,18 @@ h1 {
         position: fixed;
         bottom: 0;
         right: 0;
+        vertical-align: middle;
     }
     .bg{
       background-color: #ffffff;
-      left: 80px;
-      right: 30px;
+      left: 8%; /*30px*/
+      right: 3%; /*30px*/
       /*justify-content: center;*/
       align-content: center;
       text-align: center;
       top: 0px;
       bottom: 0px;
-      vertical-align:bottom;
+      vertical-align:middle;
       position: fixed;
     }
     .frame {
@@ -34,7 +37,7 @@ h1 {
       line-height: 25px;
       width: 450px;
       text-align: center;
-      margin: 1em 0;
+      margin: 10%;
       vertical-align: middle;
     }
     .text{
@@ -43,7 +46,7 @@ h1 {
    .img1 {
     vertical-align: middle;
     margin-right: 390px;
-  }
+    }
 
    label{
     font-family: 'DM Sans';
@@ -103,6 +106,21 @@ h1 {
     border-radius: 18px; 
     font-size: small;
   }
+  p.var {
+    width: 14%;
+    background-color: #d5d4d4;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 18px;
+    color: #3b3b3b;
+    font-family:'lovelo';
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 43%;
+  }
   footer{
     background-color: #2f3030;
     text-align: center;
@@ -115,16 +133,22 @@ h1 {
     display:flex;
     justify-content: space-around;
   }
+
+  a.metododepago{
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
   /* SCROLLBAR */
   ::-webkit-scrollbar {
     width: 1rem;
   }
   ::-webkit-scrollbar-track {
     background: #000;
-    border-left: #004751 0.3rem solid;
+    border-left: #21505d 0.3rem solid;
   }
   ::-webkit-scrollbar-thumb {
     background: #d3cdcd;
     border-radius: 5rem;
   }
   /* SCROLLBAR */
+  
