@@ -15,11 +15,14 @@
             <h1>Confirmación OTP</h1>
             <img src="https://i.imgur.com/Sl8pWxB.png" width="350" height="15">
             <br><br>
-            <p>Se ha enviado un código a ess@gmail.com</p>
+            <p>Se ha enviado un código a {{ email }}</p>
             <br><br>
-            <form>
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
                 <label for="iotp" class="label">INGRESE CÓDIGO</label><BR>
-                <input id="iotp" type="text" name="otp">
+                <input id="iotp" type="number" max="999999" name="otp">
+                <input type="hidden" name="username">
+                <input type="hidden" name="password">
                 <br><br><br>
                 <input type="submit" value="ENVIAR">
             </form>

@@ -105,6 +105,8 @@ h1 {
     font-family:'DM Sans';
     border-radius: 18px; 
     font-size: small;
+    display:inline-block;
+    width:140px;
   }
   p.var {
     width: 14%;
