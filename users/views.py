@@ -27,13 +27,13 @@ def login_view(request):
    
         otp, totp = generar_otp()
         
-        username = request.POST['username']
+        username = request.POST.get('username')
         password = request.POST['password']
         codigo= request.POST.get('otp')
         if verificar(totp, codigo):
             return render(request, 'home/main.html')
         subject="Verifica tu cuenta"
-        message= "Por favor verifica tu cuenta leyendo este código: " + otp
+        message= "Por favor verifica tu cuenta ingresando este código: " + otp
         email_from = settings.EMAIL_HOST_USER
         recipient_list = ['simongiraldoc@gmail.com']
 

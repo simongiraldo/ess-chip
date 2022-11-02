@@ -25,9 +25,9 @@
                 <p>Ingrese con su usuario de EIA Digital</p>
                 <form method="POST" action="{% url 'login' %}">
                     {% csrf_token %}
-                    <label for="iuser">USUARIO</label>
+                    <label for="iuser">CORREO</label>
                     <br>
-                    <input id="iuser" type="text" name="username" placeholder="Nombre de usuario:" required>
+                    <input id="iuser" type="text" name="username" placeholder="Correo:" required>
                     <br>
                     <br>
                     <label for="ipass" class="label">CONTRASEÑA</label>
