@@ -21,7 +21,7 @@ def login_view(request):
    
         otp = generar_otp()
         
-        username = request.POST['username']
+        username = request.POST.get('username')
         password = request.POST['password']
 
         subject="Verifica tu cuenta"
@@ -35,7 +35,7 @@ def login_view(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('otp')
+            return redirect('home')
         else:
             return render(request, 'login/index.html', {'error': 'Nombre de usuario y/o contraseña invalidos'})
 
