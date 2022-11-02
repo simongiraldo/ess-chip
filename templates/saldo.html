@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <link rel="stylesheet" href="styleg.css">
+        <link rel="stylesheet" href="{% static '/styleg.css' %}">
         <title>ESS | Saldo</title>
-        <link rel="icon" type="image/x-icon" href="Logo.png">
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/7CsmsgV.png">
         <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
         <link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet">
     </head>
@@ -12,16 +13,16 @@
             <br>
             <p></p>
             <br><br><br>
-            <img src="Logo.png" class=img1 align="right" width="85" height="80"> 
+            <img src="https://i.imgur.com/5OYhm8W.png" class=img1 align="right" width="85" height="80"> 
             <h1>Revisar Saldo</h1>
-            <img src="Titulol.PNG" width="350" height="15">
+            <img src="https://i.imgur.com/Sl8pWxB.png" width="350" height="15">
             <br><br>
             <p>Estudiante:</p>
             <p>Programa:</p>
             <br><br>
             <p class="var">$2.500</p>
             <br><br><br>
-            <a>Volver</a>
+            <a href="{% url 'home' %}">Volver</a>
             <a>Cerrar sesión</a>
 
         </div>

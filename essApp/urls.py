@@ -17,10 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from home import views as home_views
 from users import views as user_views
+from django.views.generic.base import TemplateView # new
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home_views.index, name='home'),
     path('user/login/', user_views.login_view, name='login'),
-    path('otp/', home_views.index, name='otp')
+    path('otp/', TemplateView.as_view(template_name='otp.html'), name='otp'),
+    path('saldo/', TemplateView.as_view(template_name='saldo.html'), name='saldo'),
+    path('bloquear/', TemplateView.as_view(template_name='bloquear.html'), name='bloquear'),
+    path('recargar/', TemplateView.as_view(template_name='recarga.html'), name='recargar'),
 ]

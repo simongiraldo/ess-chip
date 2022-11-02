@@ -5,6 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/7CsmsgV.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index,follow">
         <meta name="description" content="Pagina principal ESS, consulta informacion de tu carnet">
@@ -22,9 +23,9 @@
         <br><br>
         <p>Elija la opción deseada</p>
         <br><br>
-        <a href="https://www.eia.edu.co" class="options">VER SALDO</a><br><br><br>
-        <a href="https://www.eiadigital.eia.edu.co/" class="options">RECARGAR SALDO</a><br><br><br>
-        <a class="options">BLOQUEAR CARNET</a><br><br><br>
+        <a href="{% url 'saldo' %}" class="options">VER SALDO</a><br><br><br>
+        <a href="{% url 'recargar' %}" class="options">RECARGAR SALDO</a><br><br><br>
+        <a href="{% url 'bloquear' %}" class="options">BLOQUEAR CARNET</a><br><br><br>
 
     </div>
 </body>
